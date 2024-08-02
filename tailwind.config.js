@@ -3,6 +3,7 @@ tailwind.config = {
     extend: {
       colors: {
         primary: "#12141D",
+        secondary: "rgba(30, 32, 41, 1)",
         main: "#FF664F",
         para: "rgba(135, 136, 141, 1)",
       },
@@ -19,7 +20,7 @@ tailwind.config = {
     },
     lineHeight: {
       large: "46px",
-      little: "32px",
+      md: "32px",
       sm: "18px",
     },
   },
