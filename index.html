@@ -15,61 +15,71 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-primary font-inter">
-    <!-- Header section -->
-    <header>
-      <nav
-        class="text-white flex px-[20px] lg:px-[135px] h-[58px] h-[80px] items-center"
-      >
-        <!-- logo container -->
-        <div class="flex gap-2 items-center mr-20">
-          <div class="font-bold text-normal">Nettracking</div>
-          <div
-            class="bg-[#2A2B33] w-10 h-[22px] rounded-full p-0.5 cursor-pointer"
-          >
+  <body class="bg-primary">
+    <main class="font-inter max-w-[1440px] mx-auto">
+      <!-- Header section -->
+      <header>
+        <nav
+          class="text-white flex justify-between px-[20px] lg:px-[135px] h-[58px] md:h-[80px] items-center"
+        >
+          <!-- logo container -->
+          <div class="flex gap-2 items-center mr-20">
+            <div class="font-bold text-normal">Nettracking</div>
             <div
-              class="w-[18px] h-[18px] bg-white rounded-full flex items-center justify-center float-right"
+              class="bg-[#2A2B33] w-10 h-[22px] rounded-full p-0.5 cursor-pointer"
             >
-              <img src="./assets/icons/moon.png" alt="" class="h-2 w-2" />
+              <div
+                class="w-[18px] h-[18px] bg-white rounded-full flex items-center justify-center float-right"
+              >
+                <img src="./assets/icons/moon.png" alt="" class="h-2 w-2" />
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Menu bar -->
-        <menu class="flex gap-[34px] flex-grow">
-          <ul>
-            <a href="/" class="text-base font-semibold">Features</a>
-          </ul>
-          <ul>
-            <a href="/pricing" class="text-base text-white/60">Pricing</a>
-          </ul>
-          <ul>
-            <a href="/how-it-works" class="text-base text-white/60"
-              >How it works</a
-            >
-          </ul>
-          <ul>
-            <a href="/knowledge-base" class="text-base text-white/60"
-              >Knowledge base</a
-            >
-          </ul>
-          <ul>
-            <a href="/faq" class="text-base text-white/60">FAQ</a>
-          </ul>
-        </menu>
+          <!-- Menu bar -->
+          <menu class="hidden md:flex gap-[34px] flex-grow">
+            <ul>
+              <a href="/" class="text-base font-semibold">Features</a>
+            </ul>
+            <ul>
+              <a href="/pricing" class="text-base text-white/60">Pricing</a>
+            </ul>
+            <ul>
+              <a href="/how-it-works" class="text-base text-white/60"
+                >How it works</a
+              >
+            </ul>
+            <ul>
+              <a href="/knowledge-base" class="text-base text-white/60"
+                >Knowledge base</a
+              >
+            </ul>
+            <ul>
+              <a href="/faq" class="text-base text-white/60">FAQ</a>
+            </ul>
+          </menu>
 
-        <!-- Sign in/up buttons -->
-        <div class="flex gap-[18px] text-base font-semibold">
-          <button class="w-[74px] h-[36px] bg-white/5 rounded text-white">
-            Sign in</button
-          ><button class="w-[74px] h-[36px] bg-white rounded text-black">
-            Sign up
-          </button>
-        </div>
-      </nav>
+          <!-- Sign in/up buttons -->
+          <div>
+            <div class="hidden md:flex gap-[18px] text-base font-semibold">
+              <button class="w-[74px] h-[36px] bg-white/5 rounded text-white">
+                Sign in</button
+              ><button class="w-[74px] h-[36px] bg-white rounded text-black">
+                Sign up
+              </button>
+            </div>
 
-      <div class="hero"></div>
-    </header>
+            <img
+              src="./assets/icons/bar.png"
+              alt=""
+              class="w-6 h-[22px] block md:hidden"
+            />
+          </div>
+        </nav>
+
+        <div class="hero"></div>
+      </header>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
